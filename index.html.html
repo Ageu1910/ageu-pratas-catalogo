@@ -1,0 +1,1068 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ageu Pratas 925 | Catálogo PRO</title>
+  <meta name="theme-color" content="#0b2e42" />
+  <style>
+    :root {
+      --brand: #0b2e42;
+      --brand-2: #123f58;
+      --bg: #f4f7f8;
+      --bg-soft: #edf2f5;
+      --card: #ffffff;
+      --text: #15303e;
+      --muted: #647481;
+      --line: rgba(18,63,88,.12);
+      --accent: #eef4f7;
+      --glass: rgba(255,255,255,.10);
+      --shadow: 0 18px 50px rgba(11, 46, 66, 0.12);
+      --shadow-soft: 0 10px 32px rgba(11, 46, 66, 0.08);
+      --radius: 24px;
+      --whats: #25D366;
+      --gold: #d8c39c;
+      --insta-1: #F58529;
+      --insta-2: #DD2A7B;
+      --insta-3: #8134AF;
+      --hero-logo-size: 150px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text);
+      background: linear-gradient(180deg, var(--bg) 0%, var(--bg-soft) 100%);
+      min-height: 100vh;
+    }
+    a { color: inherit; text-decoration: none; }
+    button, input, select, textarea { font: inherit; }
+    img { max-width: 100%; display: block; }
+
+    .container { width: min(1240px, calc(100% - 28px)); margin: 0 auto; }
+    .hero {
+      position: relative;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 85% 15%, rgba(255,255,255,.14), transparent 18%),
+        radial-gradient(circle at 10% 0%, rgba(216,195,156,.20), transparent 26%),
+        linear-gradient(135deg, var(--brand) 0%, var(--brand-2) 60%, #0b2536 100%);
+      color: white;
+      padding: 30px 0 52px;
+      border-bottom-left-radius: 34px;
+      border-bottom-right-radius: 34px;
+      box-shadow: 0 20px 60px rgba(8, 27, 40, 0.18);
+    }
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: auto -15% -70px auto;
+      width: 440px;
+      height: 440px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(255,255,255,.16) 0%, rgba(255,255,255,0) 68%);
+      filter: blur(8px);
+      pointer-events: none;
+    }
+    .hero-grid { display: grid; grid-template-columns: minmax(280px, 380px) 1fr; gap: 34px; align-items: center; }
+    .hero-logo-wrap { display: flex; justify-content: center; }
+    .hero-logo-wrap.logo-center { justify-content: center; }
+    .hero-logo-wrap.logo-left { justify-content: flex-start; }
+    .hero-logo-wrap.logo-right { justify-content: flex-end; }
+    .logo-stage {
+      width: min(100%, 310px);
+      aspect-ratio: 1/1;
+      display: grid;
+      place-items: center;
+      position: relative;
+    }
+    .logo-halo, .logo-ring { position: absolute; border-radius: 50%; inset: 14px; }
+    .logo-halo { background: radial-gradient(circle, rgba(255,255,255,.14) 0%, rgba(255,255,255,.02) 46%, rgba(255,255,255,0) 66%); filter: blur(3px); }
+    .logo-ring { border: 1px solid rgba(255,255,255,.35); animation: spin 16s linear infinite; }
+    .logo-ring::after {
+      content: "";
+      position: absolute;
+      top: -2px;
+      left: 50%;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--gold);
+      box-shadow: 0 0 14px rgba(216,195,156,.8);
+      transform: translateX(-50%);
+    }
+    .logo-card {
+      position: relative;
+      width: var(--hero-logo-size);
+      height: var(--hero-logo-size);
+      border-radius: 28px;
+      padding: 12px;
+      background: linear-gradient(180deg, rgba(255,255,255,.18), rgba(255,255,255,.06));
+      border: 1px solid rgba(255,255,255,.18);
+      backdrop-filter: blur(10px);
+      box-shadow: var(--shadow);
+      cursor: pointer;
+      animation: floaty 4.6s ease-in-out infinite;
+      z-index: 1;
+    }
+    .logo-card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: inherit;
+      background: linear-gradient(115deg, transparent 20%, rgba(255,255,255,.28) 35%, transparent 52%);
+      transform: translateX(-130%);
+      animation: sweep 5.5s linear infinite;
+      pointer-events: none;
+    }
+    .logo-card img { width: 100%; height: 100%; object-fit: cover; border-radius: 20px; }
+    .tap-tip { font-size: 12px; color: rgba(255,255,255,.74); text-align: center; margin-top: 12px; }
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: rgba(255,255,255,.10);
+      border: 1px solid rgba(255,255,255,.18);
+      font-size: 12px;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,.82);
+      margin-bottom: 18px;
+    }
+    h1 { margin: 0 0 12px; font-size: clamp(34px, 6vw, 58px); line-height: .98; letter-spacing: -.04em; }
+    .hero-lead { margin: 0 0 12px; max-width: 760px; font-size: clamp(16px, 2.3vw, 21px); line-height: 1.6; color: rgba(255,255,255,.88); }
+    .hero-impact { margin: 0 0 24px; font-size: clamp(18px, 3vw, 27px); font-weight: 700; color: white; }
+    .hero-actions, .quick-actions, .product-actions, .toolbar { display: flex; gap: 12px; flex-wrap: wrap; }
+
+    .btn {
+      border: 0;
+      border-radius: 999px;
+      padding: 13px 18px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: transform .18s ease, box-shadow .18s ease, opacity .18s ease;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      min-height: 48px;
+    }
+    .btn:hover { transform: translateY(-2px); }
+    .btn:active { transform: translateY(0); }
+    .btn-primary { background: white; color: var(--brand); box-shadow: 0 8px 28px rgba(255,255,255,.16); }
+    .btn-ghost { background: transparent; color: white; border: 1px solid rgba(255,255,255,.26); }
+    .btn-dark { background: var(--brand); color: white; box-shadow: var(--shadow-soft); }
+    .btn-soft { background: var(--accent); color: var(--brand); }
+    .btn-outline { background: white; color: var(--brand); border: 1px solid var(--line); }
+    .btn-danger { background: #a73535; color: white; }
+    .btn-whatsapp { background: var(--whats); color: white; box-shadow: 0 12px 34px rgba(37,211,102,.24); }
+    .btn-instagram { background: linear-gradient(135deg, var(--insta-1), var(--insta-2) 55%, var(--insta-3)); color: white; box-shadow: 0 12px 34px rgba(129,52,175,.24); }
+    .btn.small { min-height: 42px; padding: 10px 14px; font-size: 14px; }
+    .btn.block { width: 100%; }
+    .icon { width: 18px; height: 18px; display: inline-block; flex: 0 0 18px; }
+
+    main { padding: 22px 0 52px; }
+    .section-head { display: flex; justify-content: space-between; gap: 14px; align-items: end; flex-wrap: wrap; margin-bottom: 16px; }
+    .section-head h2 { margin: 0 0 4px; color: var(--brand); font-size: 28px; }
+    .section-head p, .stats { color: var(--muted); margin: 0; }
+    .panel { background: rgba(255,255,255,.84); backdrop-filter: blur(8px); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow); padding: 18px; margin-bottom: 18px; }
+    .filters { display: grid; grid-template-columns: 1.2fr .9fr .8fr auto; gap: 12px; align-items: end; }
+    .field label { display: block; font-size: 13px; font-weight: 700; color: var(--muted); margin-bottom: 7px; }
+    .field input, .field select, .field textarea {
+      width: 100%;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: white;
+      padding: 12px 14px;
+      font-size: 15px;
+      color: var(--text);
+      outline: none;
+      transition: border-color .18s ease, box-shadow .18s ease;
+    }
+    .field input:focus, .field select:focus, .field textarea:focus { border-color: rgba(18,63,88,.38); box-shadow: 0 0 0 3px rgba(18,63,88,.08); }
+    .field textarea { min-height: 96px; resize: vertical; }
+
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(228px, 1fr)); gap: 18px; }
+    .card {
+      background: linear-gradient(180deg, rgba(255,255,255,1), rgba(248,250,251,1));
+      border: 1px solid rgba(18,63,88,.10);
+      border-radius: 24px;
+      overflow: hidden;
+      box-shadow: 0 12px 34px rgba(16, 42, 56, 0.08);
+      transition: transform .18s ease, box-shadow .18s ease;
+      display: flex;
+      flex-direction: column;
+      min-height: 100%;
+    }
+    .card:hover { transform: translateY(-4px); box-shadow: 0 18px 46px rgba(16,42,56,.12); }
+    .card-media {
+      position: relative;
+      background: linear-gradient(180deg, #ffffff 0%, #f6f8fa 100%);
+      aspect-ratio: 1 / 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 18px;
+      overflow: hidden;
+    }
+    .card-media::after {
+      content: "925";
+      position: absolute;
+      right: 14px;
+      bottom: 12px;
+      font-size: 11px;
+      letter-spacing: .18em;
+      color: rgba(18,63,88,.16);
+      font-weight: 800;
+    }
+    .card-media img { max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 16px; }
+    .placeholder { width: 100%; height: 100%; border-radius: 16px; border: 1px dashed var(--line); display: grid; place-items: center; color: var(--muted); text-align: center; padding: 16px; font-size: 14px; background: #fbfcfd; }
+    .card-body { padding: 16px 16px 18px; display: flex; flex-direction: column; gap: 10px; height: 100%; }
+    .category-chip { display: inline-flex; align-items:center; width: fit-content; padding: 7px 11px; border-radius: 999px; background: var(--accent); color: var(--brand); font-size: 12px; font-weight: 700; }
+    .code { font-size: 13px; color: var(--muted); font-weight: 700; }
+    .price { font-size: 28px; color: var(--brand); font-weight: 800; letter-spacing: -.04em; margin-bottom: 2px; }
+    .product-actions { margin-top: auto; padding-top: 6px; }
+
+
+.promo-banner {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  margin: 0 auto 18px;
+  width: fit-content;
+  max-width: 100%;
+  padding: 10px 16px;
+  border-radius: 999px;
+  background: rgba(255,255,255,.12);
+  border: 1px solid rgba(255,255,255,.18);
+  color: rgba(255,255,255,.92);
+  font-weight: 700;
+  box-shadow: 0 10px 30px rgba(0,0,0,.08);
+  backdrop-filter: blur(10px);
+  animation: fadeUp .7s ease both;
+}
+.hero-copy > * { animation: fadeUp .7s ease both; }
+.hero-copy > *:nth-child(2) { animation-delay: .05s; }
+.hero-copy > *:nth-child(3) { animation-delay: .12s; }
+.hero-copy > *:nth-child(4) { animation-delay: .18s; }
+.hero-copy > *:nth-child(5) { animation-delay: .24s; }
+.catalog-controls { display:grid; grid-template-columns: repeat(5, minmax(0,1fr)); gap:12px; align-items:end; }
+.mini-stat {
+  display:inline-flex; align-items:center; gap:8px; padding:9px 12px; border-radius:999px;
+  background:white; border:1px solid var(--line); color:var(--brand); font-size:13px; font-weight:700;
+}
+.card.showcase { animation: fadeUp .45s ease both; }
+.badge-row { display:flex; gap:8px; flex-wrap:wrap; }
+.badge {
+  display:inline-flex; align-items:center; gap:6px; padding:7px 10px; border-radius:999px;
+  font-size:11px; font-weight:800; letter-spacing:.04em; text-transform:uppercase;
+  background: rgba(18,63,88,.08); color: var(--brand);
+}
+.badge.badge-destaque { background: rgba(216,195,156,.22); color: #7a5a1f; }
+.badge.badge-novo { background: rgba(37,211,102,.16); color: #167a3f; }
+.badge.badge-premium { background: rgba(11,46,66,.12); color: var(--brand); }
+.copy-code {
+  display:inline-flex; align-items:center; gap:8px; background:transparent; border:1px solid var(--line);
+  color:var(--brand); border-radius:999px; padding:9px 12px; cursor:pointer; font-weight:700;
+  transition: all .18s ease;
+}
+.copy-code:hover { background: var(--accent); }
+.subinfo { color: var(--muted); font-size: 13px; line-height:1.5; }
+.floating-socials {
+  position: fixed; right: 18px; bottom: 92px; z-index: 40; display:flex; flex-direction:column; gap:12px;
+}
+.floating-social {
+  width: 56px; height:56px; border-radius:50%; display:grid; place-items:center; color:white;
+  box-shadow: 0 16px 40px rgba(0,0,0,.18);
+}
+.floating-social.instagram { background: linear-gradient(135deg, var(--insta-1), var(--insta-2) 55%, var(--insta-3)); }
+.floating-social .icon { width:24px; height:24px; }
+.image-modal {
+  position:fixed; inset:0; background:rgba(5,18,27,.82); display:none; align-items:center; justify-content:center;
+  padding:20px; z-index:80;
+}
+.image-modal.show { display:flex; }
+.image-modal-box {
+  width:min(920px, 100%); background:rgba(255,255,255,.98); border-radius:28px; padding:18px; box-shadow:0 24px 80px rgba(0,0,0,.25);
+}
+.image-modal-top { display:flex; justify-content:space-between; gap:12px; align-items:center; margin-bottom:14px; }
+.image-modal-figure {
+  width:100%; aspect-ratio:1/1; display:grid; place-items:center; background:linear-gradient(180deg, #fff, #f5f7f8); border-radius:22px; overflow:hidden;
+}
+.image-modal-figure img { max-width:100%; max-height:78vh; object-fit:contain; }
+.image-zoom-hint {
+  position:absolute; top:14px; left:14px; background:rgba(255,255,255,.88); color:var(--brand); font-size:12px;
+  padding:7px 10px; border-radius:999px; font-weight:700; border:1px solid var(--line);
+}
+.card-media.zoomable { cursor: zoom-in; }
+@keyframes fadeUp {
+  from { opacity:0; transform: translateY(14px); }
+  to { opacity:1; transform: translateY(0); }
+}
+    .floating-whatsapp {
+      position: fixed;
+      right: 18px;
+      bottom: 18px;
+      z-index: 40;
+      width: 62px;
+      height: 62px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background: var(--whats);
+      color: white;
+      box-shadow: 0 16px 40px rgba(37,211,102,.35);
+      animation: pulse 2.2s infinite;
+    }
+    .floating-whatsapp .icon { width: 28px; height: 28px; }
+
+    .admin-shell.hidden, .admin-badge, .theme-shell.hidden { display: none; }
+    .admin-on .admin-badge { display: inline-flex; }
+    .admin-wrap details[open] summary { margin-bottom: 18px; }
+    .admin-wrap summary { list-style: none; cursor: pointer; font-size: 20px; font-weight: 800; color: var(--brand); }
+    .admin-wrap summary::-webkit-details-marker { display: none; }
+    .admin-grid { display: grid; grid-template-columns: 1.15fr .85fr; gap: 18px; margin-top: 12px; }
+    .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .admin-list { border: 1px solid var(--line); border-radius: 18px; max-height: 540px; overflow: auto; background: #fbfcfd; }
+    .admin-item { display: flex; justify-content: space-between; gap: 10px; padding: 12px 14px; border-bottom: 1px solid var(--line); align-items: center; }
+    .admin-item:last-child { border-bottom: 0; }
+    .admin-meta strong { display: block; color: var(--brand); }
+    .admin-meta span { color: var(--muted); font-size: 13px; }
+    .hint { color: var(--muted); font-size: 13px; line-height: 1.55; margin-top: 8px; }
+    .theme-preview { border-radius: 18px; padding: 16px; background: linear-gradient(135deg, var(--brand), var(--brand-2)); color: white; box-shadow: var(--shadow-soft); }
+    .theme-preview strong { display: block; font-size: 18px; margin-bottom: 6px; }
+    .theme-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+    .swatch { height: 44px; border-radius: 14px; border: 1px solid rgba(0,0,0,.08); }
+    .footer { color: var(--muted); font-size: 13px; padding-top: 8px; text-align: center; }
+
+    .modal-backdrop { position: fixed; inset: 0; background: rgba(5,18,27,.6); display: none; align-items: center; justify-content: center; padding: 18px; z-index: 60; }
+    .modal-backdrop.show { display: flex; }
+    .modal { width: min(430px, 100%); background: white; border-radius: 24px; box-shadow: 0 18px 60px rgba(0,0,0,.20); padding: 22px; }
+    .modal h3 { margin: 0 0 10px; color: var(--brand); }
+    .modal p { margin: 0 0 16px; color: var(--muted); line-height: 1.5; }
+    .modal-actions { display:flex; gap: 10px; justify-content:flex-end; margin-top: 16px; flex-wrap: wrap; }
+    .error { color: #b33636; font-size: 13px; margin-top: 10px; min-height: 18px; }
+
+    @keyframes pulse { 0%,100% { transform: scale(1); } 50% { transform: scale(1.06); } }
+    @keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+    @keyframes floaty { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
+    @keyframes sweep { 0% { transform: translateX(-130%); } 52%,100% { transform: translateX(130%); } }
+
+    @media (max-width: 960px) {
+      .hero-grid, .admin-grid, .filters, .catalog-controls { grid-template-columns: 1fr; }
+      .hero { padding-bottom: 42px; }
+      .hero-copy { text-align: center; }
+      .hero-actions { justify-content: center; }
+      .hero-logo-wrap, .hero-logo-wrap.logo-left, .hero-logo-wrap.logo-right, .hero-logo-wrap.logo-center { justify-content: center; }
+      .section-head { align-items: start; }
+    }
+    @media (max-width: 640px) {
+      .container { width: min(100% - 20px, 1240px); }
+      .form-grid, .theme-grid { grid-template-columns: 1fr; }
+      .btn.block-mobile, .hero-actions .btn, .toolbar .btn, .product-actions .btn { width: 100%; }
+      .price { font-size: 24px; }
+      .floating-whatsapp { width: 58px; height: 58px; right: 14px; bottom: 14px; }
+      .floating-socials { right: 14px; bottom: 82px; }
+      .floating-social { width: 52px; height: 52px; }
+      .logo-card { width: 128px; height: 128px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero" id="heroArea">
+    <div class="container hero-grid">
+      <div class="hero-logo-wrap logo-center" id="heroLogoWrap">
+        <div>
+          <div class="logo-stage">
+            <div class="logo-halo"></div>
+            <div class="logo-ring"></div>
+            <div class="logo-card" id="logoTrigger" title="Acesso administrativo">
+              <img src="assets/logo.jpg" alt="Logo Ageu Pratas 925" id="heroLogo" />
+            </div>
+          </div>
+          <div class="tap-tip">Toque 5x no logo para acessar o modo administrador</div>
+        </div>
+      </div>
+      <div class="hero-copy">
+        <div class="promo-banner" id="promoBanner">💎 Prata 925 legítima • Atendimento rápido • Peças selecionadas</div>
+        <div class="eyebrow">Prata 925 • Elegância que permanece</div>
+        <h1 id="heroTitle">Ageu Pratas 925</h1>
+        <p class="hero-lead" id="heroLead">Na Ageu Pratas 925, cada peça é escolhida para traduzir brilho, personalidade e presença. Um catálogo criado para valorizar sua vitrine e encantar seus clientes.</p>
+        <p class="hero-impact" id="heroImpact">Detalhes que brilham. Qualidade que conquista.</p>
+        <div class="hero-actions">
+          <a class="btn btn-instagram" href="https://www.instagram.com/ageu_pratas925/" target="_blank" rel="noopener">
+            <span class="icon"></span>
+            Instagram
+          </a>
+          <a class="btn btn-whatsapp" href="https://wa.me/5511954299320?text=Olá!%20Quero%20conhecer%20as%20joias%20da%20Ageu%20Pratas%20925." target="_blank" rel="noopener">
+            <span class="icon"></span>
+            WhatsApp
+          </a>
+          <a class="btn btn-ghost admin-badge" href="#admin">Área do administrador</a>
+          <button class="btn btn-ghost admin-badge" id="logoutAdmin" type="button">Sair do modo admin</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <section class="panel">
+        <div class="section-head">
+          <div>
+            <h2>Catálogo</h2>
+            <p>Explore a coleção, destaque suas peças favoritas e atenda seus clientes com agilidade.</p>
+          </div>
+          <div class="stats" id="stats"></div>
+        </div>
+        <div class="filters">
+          <div class="field">
+            <label for="search">Buscar por código</label>
+            <input id="search" type="text" placeholder="Ex.: AF01, CM03, BF12" />
+          </div>
+          <div class="field">
+            <label for="categoryFilter">Categoria</label>
+            <select id="categoryFilter"></select>
+          </div>
+          <div class="field">
+            <label for="sortBy">Ordenação</label>
+            <select id="sortBy">
+              <option value="codigo">Código da loja</option>
+              <option value="preco-asc">Menor valor</option>
+              <option value="preco-desc">Maior valor</option>
+              <option value="categoria">Categoria</option>
+            </select>
+          </div>
+          <div class="toolbar">
+            <button class="btn btn-soft block-mobile" id="clearFilters">Limpar filtros</button>
+            <button class="btn btn-dark block-mobile admin-badge" id="reloadData">Restaurar catálogo</button>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="grid" id="catalogGrid"></div>
+      </section>
+
+      <section class="panel admin-shell hidden" id="adminShell">
+        <section class="admin-wrap" id="admin">
+          <details>
+            <summary>Área do administrador</summary>
+            <div class="admin-grid">
+              <div>
+                <h3 style="margin-top:0; color:var(--brand)">Cadastro e edição de produtos</h3>
+                <div class="form-grid">
+                  <div class="field">
+                    <label for="codigo">Código da loja</label>
+                    <input id="codigo" type="text" placeholder="Ex.: AF11" />
+                  </div>
+                  <div class="field">
+                    <label for="codigoFornecedor">Código do fornecedor</label>
+                    <input id="codigoFornecedor" type="text" placeholder="Opcional" />
+                  </div>
+                  <div class="field">
+                    <label for="categoria">Categoria</label>
+                    <input id="categoria" type="text" placeholder="Ex.: Anel Feminino" />
+                  </div>
+                  <div class="field">
+                    <label for="preco">Valor principal</label>
+                    <input id="preco" type="number" min="0" step="0.01" placeholder="Ex.: 59.90" />
+                  </div>
+                  <div class="field">
+                    <label for="colecao">Coleção</label>
+                    <input id="colecao" type="text" placeholder="Ex.: Feminina, Masculina, Premium" />
+                  </div>
+                  <div class="field">
+                    <label for="selo">Selo de destaque</label>
+                    <select id="selo">
+                      <option value="">Sem selo</option>
+                      <option value="Destaque">✨ Destaque</option>
+                      <option value="Novo">🆕 Novo</option>
+                      <option value="Premium">💎 Premium</option>
+                    </select>
+                  </div>
+                  <div class="field" style="grid-column:1 / -1">
+                    <label for="descricao">Observação interna</label>
+                    <textarea id="descricao" placeholder="Opcional. Ex.: peça nova, destaque, coleção especial."></textarea>
+                  </div>
+                  <div class="field" style="grid-column:1 / -1">
+                    <label for="imagem">Imagem do produto</label>
+                    <input id="imagem" type="file" accept="image/*" />
+                  </div>
+                </div>
+                <div class="quick-actions" style="margin-top:14px;">
+                  <button class="btn btn-dark" id="saveProduct">Salvar produto</button>
+                  <button class="btn btn-soft" id="newProduct">Novo cadastro</button>
+                  <button class="btn btn-soft" id="exportJson">Exportar backup JSON</button>
+                  <label class="btn btn-soft" for="importJson" style="cursor:pointer;">Importar backup JSON</label>
+                  <input id="importJson" type="file" accept="application/json" hidden />
+                </div>
+                <p class="hint">Esta área só aparece depois do login administrativo. As alterações ficam salvas neste navegador.</p>
+                <p class="hint">Use o backup JSON sempre que fizer mudanças importantes.</p>
+              </div>
+              <div>
+                <h3 style="margin-top:0; color:var(--brand)">Produtos cadastrados</h3>
+                <div class="admin-list" id="adminList"></div>
+              </div>
+            </div>
+          </details>
+        </section>
+      </section>
+
+      <section class="panel theme-shell hidden" id="themeShell">
+        <details>
+          <summary style="list-style:none; cursor:pointer; font-size:20px; font-weight:800; color:var(--brand)">Personalização visual do catálogo</summary>
+          <div class="admin-grid" style="margin-top:18px;">
+            <div>
+              <h3 style="margin-top:0; color:var(--brand)">Editar apresentação e identidade visual</h3>
+              <div class="form-grid">
+                <div class="field" style="grid-column:1 / -1">
+                  <label for="cfgTitle">Título principal</label>
+                  <input id="cfgTitle" type="text" placeholder="Ageu Pratas 925" />
+                </div>
+                <div class="field" style="grid-column:1 / -1">
+                  <label for="cfgLead">Apresentação da loja</label>
+                  <textarea id="cfgLead"></textarea>
+                </div>
+                <div class="field" style="grid-column:1 / -1">
+                  <label for="cfgImpact">Frase de impacto</label>
+                  <input id="cfgImpact" type="text" placeholder="Detalhes que brilham. Qualidade que conquista." />
+                </div>
+                <div class="field" style="grid-column:1 / -1">
+                  <label for="cfgBanner">Faixa promocional do topo</label>
+                  <input id="cfgBanner" type="text" placeholder="💎 Prata 925 legítima • Atendimento rápido • Peças selecionadas" />
+                </div>
+                <div class="field">
+                  <label for="cfgBrand">Cor principal</label>
+                  <input id="cfgBrand" type="color" />
+                </div>
+                <div class="field">
+                  <label for="cfgBrand2">Cor secundária</label>
+                  <input id="cfgBrand2" type="color" />
+                </div>
+                <div class="field">
+                  <label for="cfgBg">Fundo claro</label>
+                  <input id="cfgBg" type="color" />
+                </div>
+                <div class="field">
+                  <label for="cfgAccent">Cor de apoio</label>
+                  <input id="cfgAccent" type="color" />
+                </div>
+                <div class="field">
+                  <label for="cfgLogoPosition">Posição do logo</label>
+                  <select id="cfgLogoPosition">
+                    <option value="left">Esquerda</option>
+                    <option value="center">Centro</option>
+                    <option value="right">Direita</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label for="cfgLogoSize">Tamanho do logo</label>
+                  <select id="cfgLogoSize">
+                    <option value="128">Pequeno</option>
+                    <option value="150">Médio</option>
+                    <option value="172">Grande</option>
+                  </select>
+                </div>
+                <div class="field" style="grid-column:1 / -1">
+                  <label for="cfgPassword">Senha do administrador</label>
+                  <input id="cfgPassword" type="text" placeholder="Senha básica do admin" />
+                </div>
+              </div>
+              <div class="quick-actions" style="margin-top:14px;">
+                <button class="btn btn-dark" id="saveTheme">Salvar personalização</button>
+                <button class="btn btn-soft" id="resetTheme">Restaurar aparência original</button>
+              </div>
+              <p class="hint">Você pode ajustar cores, texto de apresentação, frase de impacto, tamanho e posição do logo sem mexer em código.</p>
+            </div>
+            <div>
+              <div class="theme-preview">
+                <strong id="previewTitle">Ageu Pratas 925</strong>
+                <span id="previewImpact">Detalhes que brilham. Qualidade que conquista.</span>
+              </div>
+              <div class="theme-grid" style="margin-top:14px;">
+                <div>
+                  <label class="hint" style="display:block; margin:0 0 6px;">Cor principal</label>
+                  <div class="swatch" id="swatchBrand"></div>
+                </div>
+                <div>
+                  <label class="hint" style="display:block; margin:0 0 6px;">Cor secundária</label>
+                  <div class="swatch" id="swatchBrand2"></div>
+                </div>
+                <div>
+                  <label class="hint" style="display:block; margin:0 0 6px;">Fundo</label>
+                  <div class="swatch" id="swatchBg"></div>
+                </div>
+                <div>
+                  <label class="hint" style="display:block; margin:0 0 6px;">Apoio</label>
+                  <div class="swatch" id="swatchAccent"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </details>
+      </section>
+
+      <div class="footer">Catálogo PRO desenvolvido para Ageu Pratas 925. Visual premium, zoom nas peças, coleções, selos e atualização prática.</div>
+    </div>
+  </main>
+
+  <div class="floating-socials">
+    <a class="floating-social instagram" href="https://www.instagram.com/ageu_pratas925/" target="_blank" rel="noopener" aria-label="Instagram Ageu Pratas 925">
+      <span class="icon"></span>
+    </a>
+  </div>
+
+  <a class="floating-whatsapp" href="https://wa.me/5511954299320?text=Olá!%20Quero%20conhecer%20as%20peças%20da%20Ageu%20Pratas%20925." target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+    <span class="icon"></span>
+  </a>
+
+  <div class="image-modal" id="imageModal">
+    <div class="image-modal-box">
+      <div class="image-modal-top">
+        <div>
+          <strong id="modalCode" style="display:block; color:var(--brand); font-size:22px;"></strong>
+          <span id="modalMeta" class="subinfo"></span>
+        </div>
+        <button class="btn btn-soft" type="button" id="closeImageModal">Fechar</button>
+      </div>
+      <div class="image-modal-figure">
+        <img id="modalImage" alt="" />
+      </div>
+      <div class="quick-actions" style="margin-top:14px;">
+        <button class="copy-code" type="button" id="modalCopyCode">Copiar código</button>
+        <a class="btn btn-whatsapp small" id="modalWhatsApp" target="_blank" rel="noopener"><span class="icon"></span> Pedir no WhatsApp</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-backdrop" id="adminModal">
+    <div class="modal">
+      <h3>Acesso do administrador</h3>
+      <p>Digite a senha para liberar a área administrativa e a personalização visual.</p>
+      <div class="field">
+        <label for="adminPassword">Senha</label>
+        <input id="adminPassword" type="password" placeholder="Digite a senha" />
+      </div>
+      <div class="error" id="adminError"></div>
+      <div class="modal-actions">
+        <button class="btn btn-soft" type="button" id="closeAdminModal">Cancelar</button>
+        <button class="btn btn-dark" type="button" id="loginAdmin">Entrar</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const ICON_INSTAGRAM = `<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/><circle cx="17.2" cy="6.8" r="1.2" fill="currentColor"/></svg>`;
+    const ICON_WHATSAPP = `<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M20 11.5C20 16.1944 16.1944 20 11.5 20C9.90928 20 8.4206 19.5629 7.14773 18.8028L4 20L5.24716 16.9784C4.44391 15.6841 4 14.1572 4 12.5263C4 7.83191 7.80558 4.02632 12.5 4.02632C17.1944 4.02632 21 7.83191 21 12.5263" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M9.1 9.7C9.3 9.2 9.5 9.2 9.8 9.2C10 9.2 10.2 9.2 10.4 9.2C10.6 9.2 10.9 9.3 11 9.7C11.2 10.1 11.6 11.1 11.6 11.2C11.6 11.4 11.7 11.6 11.5 11.8C11.4 11.9 11.2 12.1 11.1 12.2C11 12.3 10.9 12.4 11 12.6C11.1 12.8 11.6 13.6 12.4 14.3C13.4 15.1 14.1 15.4 14.3 15.5C14.5 15.6 14.7 15.6 14.8 15.4C15 15.2 15.4 14.7 15.6 14.4C15.7 14.2 15.9 14.1 16.1 14.2C16.3 14.3 17.5 14.9 17.7 15C17.9 15.1 18 15.2 18 15.4C18 15.6 17.7 16.6 17 17C16.4 17.4 15.8 17.5 15.4 17.4C15 17.4 13.8 17 12.2 15.9C10.3 14.5 9.1 12.8 8.8 12.3C8.4 11.8 8 11 8 10.4C8 9.8 8.3 9.5 8.5 9.3C8.7 9.1 8.9 9 9.1 9.7Z" fill="currentColor"/></svg>`;
+    document.querySelectorAll('.btn-instagram .icon').forEach(el => el.innerHTML = ICON_INSTAGRAM);
+    document.querySelectorAll('.btn-whatsapp .icon').forEach(el => el.innerHTML = ICON_WHATSAPP);
+    document.querySelector('.floating-whatsapp .icon').innerHTML = ICON_WHATSAPP;
+    document.querySelector('.floating-social.instagram .icon').innerHTML = ICON_INSTAGRAM;
+
+    const INITIAL_PRODUCTS = [{"codigo": "AF01", "codigoFornecedor": "0066103", "categoria": "Anel Feminino", "preco": 37.0, "imagem": "assets/products/AF01.jpg", "descricao": ""}, {"codigo": "AF02", "codigoFornecedor": "0062551", "categoria": "Anel Feminino", "preco": 43.0, "imagem": "assets/products/AF02.jpg", "descricao": ""}, {"codigo": "AF03", "codigoFornecedor": "0070108", "categoria": "Anel Feminino", "preco": 60.0, "imagem": "assets/products/AF03.jpg", "descricao": ""}, {"codigo": "AF04", "codigoFornecedor": "0069583", "categoria": "Anel Feminino", "preco": 40.0, "imagem": "assets/products/AF04.jpg", "descricao": ""}, {"codigo": "AF05", "codigoFornecedor": "0042696", "categoria": "Anel Feminino", "preco": 51.0, "imagem": "assets/products/AF05.jpg", "descricao": ""}, {"codigo": "AF06", "codigoFornecedor": "0049990", "categoria": "Anel Feminino", "preco": 48.0, "imagem": "assets/products/AF06.jpg", "descricao": ""}, {"codigo": "AF07", "codigoFornecedor": "0060766", "categoria": "Anel Feminino", "preco": 55.0, "imagem": "assets/products/AF07.jpg", "descricao": ""}, {"codigo": "AF08", "codigoFornecedor": "0063711", "categoria": "Anel Feminino", "preco": 58.0, "imagem": "assets/products/AF08.jpg", "descricao": ""}, {"codigo": "AF09", "codigoFornecedor": "0069236", "categoria": "Anel Feminino", "preco": 62.0, "imagem": "assets/products/AF09.jpg", "descricao": ""}, {"codigo": "AF10", "codigoFornecedor": "0065434", "categoria": "Anel Feminino", "preco": 55.0, "imagem": "assets/products/AF10.jpg", "descricao": ""}, {"codigo": "BL01", "codigoFornecedor": "0069218", "categoria": "Berloque", "preco": 38.0, "imagem": "assets/products/BL01.jpg", "descricao": ""}, {"codigo": "BL02", "codigoFornecedor": "0069233", "categoria": "Berloque", "preco": 50.0, "imagem": "assets/products/BL02.jpg", "descricao": ""}, {"codigo": "BL03", "codigoFornecedor": "0058402", "categoria": "Berloque", "preco": 55.0, "imagem": "assets/products/BL03.jpg", "descricao": ""}, {"codigo": "BL04", "codigoFornecedor": "0069234", "categoria": "Berloque", "preco": 48.0, "imagem": "assets/products/BL04.jpg", "descricao": ""}, {"codigo": "BL05", "codigoFornecedor": "0059661", "categoria": "Berloque", "preco": 48.0, "imagem": "assets/products/BL05.jpg", "descricao": ""}, {"codigo": "BL06", "codigoFornecedor": "0059584", "categoria": "Berloque", "preco": 49.0, "imagem": "assets/products/BL06.jpg", "descricao": ""}, {"codigo": "BL07", "codigoFornecedor": "0064231", "categoria": "Berloque", "preco": 48.0, "imagem": "assets/products/BL07.jpg", "descricao": ""}, {"codigo": "BL08", "codigoFornecedor": "0061563", "categoria": "Berloque", "preco": 50.0, "imagem": "assets/products/BL08.jpg", "descricao": ""}, {"codigo": "BL09", "codigoFornecedor": "0069205", "categoria": "Berloque", "preco": 48.0, "imagem": "assets/products/BL09.jpg", "descricao": ""}, {"codigo": "BL10", "codigoFornecedor": "0062802", "categoria": "Berloque", "preco": 50.0, "imagem": "assets/products/BL10.jpg", "descricao": ""}, {"codigo": "BF01", "codigoFornecedor": "0067379", "categoria": "Brinco Feminino", "preco": 150.0, "imagem": "assets/products/BF01.jpg", "descricao": ""}, {"codigo": "BF02", "codigoFornecedor": "0067381", "categoria": "Brinco Feminino", "preco": 120.0, "imagem": "assets/products/BF02.jpg", "descricao": ""}, {"codigo": "BF03", "codigoFornecedor": "0067373", "categoria": "Brinco Feminino", "preco": 210.0, "imagem": "assets/products/BF03.jpg", "descricao": ""}, {"codigo": "BF04", "codigoFornecedor": "0067371", "categoria": "Brinco Feminino", "preco": 260.0, "imagem": "assets/products/BF04.jpg", "descricao": ""}, {"codigo": "BF05", "codigoFornecedor": "0067370", "categoria": "Brinco Feminino", "preco": 180.0, "imagem": "assets/products/BF05.jpg", "descricao": ""}, {"codigo": "BF06", "codigoFornecedor": "0067360", "categoria": "Brinco Feminino", "preco": 180.0, "imagem": "assets/products/BF06.jpg", "descricao": ""}, {"codigo": "BF07", "codigoFornecedor": "0067376", "categoria": "Brinco Feminino", "preco": 195.0, "imagem": "assets/products/BF07.jpg", "descricao": ""}, {"codigo": "BF08", "codigoFornecedor": "0064275", "categoria": "Brinco Feminino", "preco": 70.0, "imagem": "assets/products/BF08.jpg", "descricao": ""}, {"codigo": "BF09", "codigoFornecedor": "0064099", "categoria": "Brinco Feminino", "preco": 50.0, "imagem": "assets/products/BF09.jpg", "descricao": ""}, {"codigo": "BF10", "codigoFornecedor": "0064020", "categoria": "Brinco Feminino", "preco": 64.0, "imagem": "assets/products/BF10.jpg", "descricao": ""}, {"codigo": "BF11", "codigoFornecedor": "0064029", "categoria": "Brinco Feminino", "preco": 70.0, "imagem": "assets/products/BF11.jpg", "descricao": ""}, {"codigo": "BF12", "codigoFornecedor": "0064101", "categoria": "Brinco Feminino", "preco": 66.0, "imagem": "assets/products/BF12.jpg", "descricao": ""}, {"codigo": "BF13", "codigoFornecedor": "0070132", "categoria": "Brinco Feminino", "preco": 55.0, "imagem": "assets/products/BF13.jpg", "descricao": ""}, {"codigo": "BF14", "codigoFornecedor": "0069286", "categoria": "Brinco Feminino", "preco": 68.0, "imagem": "assets/products/BF14.jpg", "descricao": ""}, {"codigo": "BF15", "codigoFornecedor": "0070143", "categoria": "Brinco Feminino", "preco": 55.0, "imagem": "assets/products/BF15.jpg", "descricao": ""}, {"codigo": "BF16", "codigoFornecedor": "0062927", "categoria": "Brinco Feminino", "preco": 68.0, "imagem": "assets/products/BF16.jpg", "descricao": ""}, {"codigo": "BF17", "codigoFornecedor": "0067719", "categoria": "Brinco Feminino", "preco": 65.0, "imagem": "assets/products/BF17.jpg", "descricao": ""}, {"codigo": "BF18", "codigoFornecedor": "0062955", "categoria": "Brinco Feminino", "preco": 61.0, "imagem": "assets/products/BF18.jpg", "descricao": ""}, {"codigo": "CF01", "codigoFornecedor": "0065596", "categoria": "Colar Feminino", "preco": 160.0, "imagem": "assets/products/CF01.jpg", "descricao": ""}, {"codigo": "CF02", "codigoFornecedor": "0065612", "categoria": "Colar Feminino", "preco": 95.0, "imagem": "assets/products/CF02.jpg", "descricao": ""}, {"codigo": "CF03", "codigoFornecedor": "0065615", "categoria": "Colar Feminino", "preco": 110.0, "imagem": "assets/products/CF03.jpg", "descricao": ""}, {"codigo": "CF04", "codigoFornecedor": "0062823", "categoria": "Colar Feminino", "preco": 100.0, "imagem": "assets/products/CF04.jpg", "descricao": ""}, {"codigo": "CF05", "codigoFornecedor": "0051393", "categoria": "Colar Feminino", "preco": 90.0, "imagem": "assets/products/CF05.jpg", "descricao": ""}, {"codigo": "CF06", "codigoFornecedor": "0056123", "categoria": "Colar Feminino", "preco": 90.0, "imagem": "assets/products/CF06.jpg", "descricao": ""}, {"codigo": "CF07", "codigoFornecedor": "0051013", "categoria": "Colar Feminino", "preco": 95.0, "imagem": "assets/products/CF07.jpg", "descricao": ""}, {"codigo": "CM01", "codigoFornecedor": "0061869", "categoria": "Corrente Masculina", "preco": 550.0, "imagem": "assets/products/CM01.jpg", "descricao": ""}, {"codigo": "CM02", "codigoFornecedor": "0052258", "categoria": "Corrente Masculina", "preco": 250.0, "imagem": "assets/products/CM02.jpg", "descricao": ""}, {"codigo": "CM03", "codigoFornecedor": "0050419", "categoria": "Corrente Masculina", "preco": 850.0, "imagem": "assets/products/CM03.jpg", "descricao": ""}, {"codigo": "CM04", "codigoFornecedor": "0061431", "categoria": "Corrente Masculina", "preco": 780.0, "imagem": "assets/products/CM04.jpg", "descricao": ""}, {"codigo": "CM05", "codigoFornecedor": "0064391", "categoria": "Corrente Masculina", "preco": 480.0, "imagem": "assets/products/CM05.jpg", "descricao": ""}, {"codigo": "CM06", "codigoFornecedor": "0055598", "categoria": "Corrente Masculina", "preco": 580.0, "imagem": "assets/products/CM06.jpg", "descricao": ""}, {"codigo": "CM07", "codigoFornecedor": "0061432", "categoria": "Corrente Masculina", "preco": 890.0, "imagem": "assets/products/CM07.jpg", "descricao": ""}, {"codigo": "CM08", "codigoFornecedor": "0062291", "categoria": "Corrente Masculina", "preco": 280.0, "imagem": "assets/products/CM08.jpg", "descricao": ""}, {"codigo": "CM09", "codigoFornecedor": "0056417", "categoria": "Corrente Masculina", "preco": 420.0, "imagem": "", "descricao": ""}, {"codigo": "CM10", "codigoFornecedor": "0050925", "categoria": "Corrente Masculina", "preco": 580.0, "imagem": "", "descricao": ""}, {"codigo": "CM11", "codigoFornecedor": "0057382", "categoria": "Corrente Masculina", "preco": 380.0, "imagem": "assets/products/CM11.jpg", "descricao": ""}, {"codigo": "CM12", "codigoFornecedor": "0055426", "categoria": "Corrente Masculina", "preco": 290.0, "imagem": "", "descricao": ""}, {"codigo": "CM13", "codigoFornecedor": "0055427", "categoria": "Corrente Masculina", "preco": 390.0, "imagem": "", "descricao": ""}, {"codigo": "PF01", "codigoFornecedor": "0066782", "categoria": "Pulseira Feminina", "preco": 99.0, "imagem": "assets/products/PF01.jpg", "descricao": ""}, {"codigo": "PF02", "codigoFornecedor": "0070041", "categoria": "Pulseira Feminina", "preco": 95.0, "imagem": "assets/products/PF02.jpg", "descricao": ""}, {"codigo": "PF03", "codigoFornecedor": "0066771", "categoria": "Pulseira Feminina", "preco": 90.0, "imagem": "assets/products/PF03.jpg", "descricao": ""}, {"codigo": "PF04", "codigoFornecedor": "0066823", "categoria": "Pulseira Feminina", "preco": 80.0, "imagem": "assets/products/PF04.jpg", "descricao": ""}, {"codigo": "PF05", "codigoFornecedor": "0070169", "categoria": "Pulseira Feminina", "preco": 65.0, "imagem": "assets/products/PF05.jpg", "descricao": ""}, {"codigo": "PM01", "codigoFornecedor": "0061868", "categoria": "Pulseira Maculina", "preco": 259.0, "imagem": "assets/products/PM01.jpg", "descricao": ""}, {"codigo": "PM02", "codigoFornecedor": "0050449", "categoria": "Pulseira Maculina", "preco": 350.0, "imagem": "assets/products/PM02.jpg", "descricao": ""}, {"codigo": "PM03", "codigoFornecedor": "0056418", "categoria": "Pulseira Maculina", "preco": 250.0, "imagem": "assets/products/PM03.jpg", "descricao": ""}, {"codigo": "PM04", "codigoFornecedor": "0070233", "categoria": "Pulseira Maculina", "preco": 280.0, "imagem": "assets/products/PM04.jpg", "descricao": ""}, {"codigo": "PM05", "codigoFornecedor": "0055597", "categoria": "Pulseira Maculina", "preco": 260.0, "imagem": "assets/products/PM05.jpg", "descricao": ""}, {"codigo": "PM06", "codigoFornecedor": "0052566", "categoria": "Pulseira Maculina", "preco": 180.0, "imagem": "assets/products/PM06.jpg", "descricao": ""}];
+    const DEFAULT_CONFIG = {
+      title: 'Ageu Pratas 925',
+      lead: 'Na Ageu Pratas 925, cada peça é escolhida para traduzir brilho, personalidade e presença. Um catálogo criado para valorizar sua vitrine e encantar seus clientes.',
+      impact: 'Detalhes que brilham. Qualidade que conquista.',
+      banner: '💎 Prata 925 legítima • Atendimento rápido • Peças selecionadas',
+      brand: '#0b2e42',
+      brand2: '#123f58',
+      bg: '#f4f7f8',
+      accent: '#eef4f7',
+      logoPosition: 'center',
+      logoSize: '150',
+      adminPassword: 'ageu925'
+    };
+
+    const STORAGE_KEY = 'ageu-pratas-products-v3';
+    const CONFIG_KEY = 'ageu-pratas-config-v3';
+    const ADMIN_FLAG = 'ageu-pratas-admin-enabled';
+    const state = { products: [], selectedCode: null, isAdmin: false, config: { ...DEFAULT_CONFIG } };
+
+    const body = document.body;
+    const root = document.documentElement;
+    const grid = document.getElementById('catalogGrid');
+    const stats = document.getElementById('stats');
+    const categoryFilter = document.getElementById('categoryFilter');
+    const searchInput = document.getElementById('search');
+    const sortBy = document.getElementById('sortBy');
+    const adminShell = document.getElementById('adminShell');
+    const themeShell = document.getElementById('themeShell');
+    const adminList = document.getElementById('adminList');
+    const adminModal = document.getElementById('adminModal');
+    const adminPassword = document.getElementById('adminPassword');
+    const adminError = document.getElementById('adminError');
+    const heroTitle = document.getElementById('heroTitle');
+    const heroLead = document.getElementById('heroLead');
+    const heroImpact = document.getElementById('heroImpact');
+    const heroLogoWrap = document.getElementById('heroLogoWrap');
+    const promoBanner = document.getElementById('promoBanner');
+    const previewTitle = document.getElementById('previewTitle');
+    const previewImpact = document.getElementById('previewImpact');
+    const collectionFilter = document.getElementById('collectionFilter');
+    const imageModal = document.getElementById('imageModal');
+    const modalImage = document.getElementById('modalImage');
+    const modalCode = document.getElementById('modalCode');
+    const modalMeta = document.getElementById('modalMeta');
+    const modalWhatsApp = document.getElementById('modalWhatsApp');
+    const modalCopyCode = document.getElementById('modalCopyCode');
+
+    const form = {
+      codigo: document.getElementById('codigo'),
+      codigoFornecedor: document.getElementById('codigoFornecedor'),
+      categoria: document.getElementById('categoria'),
+      preco: document.getElementById('preco'),
+      colecao: document.getElementById('colecao'),
+      selo: document.getElementById('selo'),
+      descricao: document.getElementById('descricao'),
+      imagem: document.getElementById('imagem')
+    };
+
+    const cfg = {
+      title: document.getElementById('cfgTitle'),
+      lead: document.getElementById('cfgLead'),
+      impact: document.getElementById('cfgImpact'),
+      banner: document.getElementById('cfgBanner'),
+      brand: document.getElementById('cfgBrand'),
+      brand2: document.getElementById('cfgBrand2'),
+      bg: document.getElementById('cfgBg'),
+      accent: document.getElementById('cfgAccent'),
+      logoPosition: document.getElementById('cfgLogoPosition'),
+      logoSize: document.getElementById('cfgLogoSize'),
+      password: document.getElementById('cfgPassword')
+    };
+
+    let tapCount = 0;
+    let tapTimer;
+
+    function escapeHtml(value) {
+      return String(value ?? '').replace(/[&<>"']/g, char => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[char]);
+    }
+    function currency(value) { return Number(value || 0).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }); }
+    function structuredCloneSafe(obj) { return JSON.parse(JSON.stringify(obj)); }
+    function whatsappLink(item) {
+      const msg = `Olá! Tenho interesse na peça ${item.codigo} da Ageu Pratas 925. Valor visto no catálogo: ${currency(item.preco)}.`;
+      return `https://wa.me/5511954299320?text=${encodeURIComponent(msg)}`;
+    }
+
+
+    function inferCollection(item) {
+      if (item.colecao) return item.colecao;
+      const text = `${item.categoria || ''} ${item.codigo || ''}`.toLowerCase();
+      if (text.includes('masc')) return 'Masculina';
+      if (text.includes('fem')) return 'Feminina';
+      if (Number(item.preco) >= 250) return 'Premium';
+      return 'Essenciais';
+    }
+    function inferBadge(item) {
+      if (item.selo) return item.selo;
+      const price = Number(item.preco || 0);
+      if (price >= 250) return 'Premium';
+      return '';
+    }
+
+    function loadProducts() {
+      const saved = localStorage.getItem(STORAGE_KEY);
+      const base = saved ? JSON.parse(saved) : structuredCloneSafe(INITIAL_PRODUCTS);
+      state.products = base.map(item => ({ ...item, colecao: inferCollection(item), selo: inferBadge(item) }));
+    }
+    function persistProducts() { localStorage.setItem(STORAGE_KEY, JSON.stringify(state.products)); }
+    function loadConfig() {
+      const saved = localStorage.getItem(CONFIG_KEY);
+      state.config = saved ? { ...DEFAULT_CONFIG, ...JSON.parse(saved) } : { ...DEFAULT_CONFIG };
+    }
+    function persistConfig() { localStorage.setItem(CONFIG_KEY, JSON.stringify(state.config)); }
+
+    function setAdminMode(enabled) {
+      state.isAdmin = enabled;
+      if (enabled) localStorage.setItem(ADMIN_FLAG, '1');
+      else localStorage.removeItem(ADMIN_FLAG);
+      adminShell.classList.toggle('hidden', !enabled);
+      themeShell.classList.toggle('hidden', !enabled);
+      body.classList.toggle('admin-on', enabled);
+    }
+
+    function applyConfig() {
+      const c = state.config;
+      root.style.setProperty('--brand', c.brand);
+      root.style.setProperty('--brand-2', c.brand2);
+      root.style.setProperty('--bg', c.bg);
+      root.style.setProperty('--bg-soft', mix(c.bg, '#ffffff', 10));
+      root.style.setProperty('--accent', c.accent);
+      root.style.setProperty('--hero-logo-size', `${Number(c.logoSize || 150)}px`);
+      heroTitle.textContent = c.title;
+      heroLead.textContent = c.lead;
+      heroImpact.textContent = c.impact;
+      promoBanner.textContent = c.banner;
+      heroLogoWrap.className = `hero-logo-wrap logo-${c.logoPosition || 'center'}`;
+      document.title = `${c.title} | Catálogo PRO`;
+      cfg.title.value = c.title;
+      cfg.lead.value = c.lead;
+      cfg.impact.value = c.impact;
+      cfg.banner.value = c.banner;
+      cfg.brand.value = c.brand;
+      cfg.brand2.value = c.brand2;
+      cfg.bg.value = c.bg;
+      cfg.accent.value = c.accent;
+      cfg.logoPosition.value = c.logoPosition;
+      cfg.logoSize.value = String(c.logoSize);
+      cfg.password.value = c.adminPassword;
+      previewTitle.textContent = c.title;
+      previewImpact.textContent = c.impact;
+      document.getElementById('swatchBrand').style.background = c.brand;
+      document.getElementById('swatchBrand2').style.background = c.brand2;
+      document.getElementById('swatchBg').style.background = c.bg;
+      document.getElementById('swatchAccent').style.background = c.accent;
+      document.querySelector('.theme-preview').style.background = `linear-gradient(135deg, ${c.brand}, ${c.brand2})`;
+    }
+
+    function mix(hex1, hex2, weight) {
+      const p1 = hexToRgb(hex1), p2 = hexToRgb(hex2);
+      const w = weight / 100;
+      const r = Math.round(p1.r * (1 - w) + p2.r * w);
+      const g = Math.round(p1.g * (1 - w) + p2.g * w);
+      const b = Math.round(p1.b * (1 - w) + p2.b * w);
+      return rgbToHex(r, g, b);
+    }
+    function hexToRgb(hex) {
+      const value = hex.replace('#', '');
+      const normalized = value.length === 3 ? value.split('').map(c => c + c).join('') : value;
+      return { r: parseInt(normalized.substring(0,2), 16), g: parseInt(normalized.substring(2,4), 16), b: parseInt(normalized.substring(4,6), 16) };
+    }
+    function rgbToHex(r, g, b) { return '#' + [r,g,b].map(v => v.toString(16).padStart(2,'0')).join(''); }
+
+    function fillCategoryFilter() {
+      const current = categoryFilter.value;
+      const categories = [...new Set(state.products.map(p => p.categoria).filter(Boolean))].sort((a, b) => a.localeCompare(b, 'pt-BR'));
+      categoryFilter.innerHTML = `<option value="">Todas as categorias</option>` + categories.map(cat => `<option value="${escapeHtml(cat)}">${escapeHtml(cat)}</option>`).join('');
+      if ([...categoryFilter.options].some(opt => opt.value === current)) categoryFilter.value = current;
+    }
+    function fillCollectionFilter() {
+      const current = collectionFilter.value;
+      const collections = [...new Set(state.products.map(p => p.colecao).filter(Boolean))].sort((a, b) => a.localeCompare(b, 'pt-BR'));
+      collectionFilter.innerHTML = `<option value="">Todas as coleções</option>` + collections.map(col => `<option value="${escapeHtml(col)}">${escapeHtml(col)}</option>`).join('');
+      if ([...collectionFilter.options].some(opt => opt.value === current)) collectionFilter.value = current;
+    }
+
+    function getFilteredProducts() {
+      let items = [...state.products];
+      const term = searchInput.value.trim().toLowerCase();
+      const cat = categoryFilter.value;
+      const collection = collectionFilter.value;
+      const sort = sortBy.value;
+      if (term) items = items.filter(item => (item.codigo || '').toLowerCase().includes(term) || (item.codigoFornecedor || '').toLowerCase().includes(term));
+      if (cat) items = items.filter(item => item.categoria === cat);
+      if (collection) items = items.filter(item => item.colecao === collection);
+      if (sort === 'preco-asc') items.sort((a,b) => Number(a.preco) - Number(b.preco));
+      else if (sort === 'preco-desc') items.sort((a,b) => Number(b.preco) - Number(a.preco));
+      else if (sort === 'categoria') items.sort((a,b) => `${a.categoria}-${a.codigo}`.localeCompare(`${b.categoria}-${b.codigo}`, 'pt-BR'));
+      else if (sort === 'destaque') items.sort((a,b) => Number(Boolean(b.selo)) - Number(Boolean(a.selo)) || (a.codigo || '').localeCompare(b.codigo || '', 'pt-BR'));
+      else items.sort((a,b) => (a.codigo || '').localeCompare(b.codigo || '', 'pt-BR'));
+      return items;
+    }
+
+    function renderCatalog() {
+      const items = getFilteredProducts();
+      stats.innerHTML = `<span class="mini-stat">${items.length} produto(s) exibido(s)</span> <span class="mini-stat">${state.products.length} cadastrados</span>`;
+      grid.innerHTML = items.map((item, idx) => `
+        <article class="card showcase" style="animation-delay:${Math.min(idx * 0.03, 0.3)}s">
+          <div class="card-media ${item.imagem ? 'zoomable' : ''}" ${item.imagem ? `onclick="openImageModal('${escapeHtml(item.codigo)}')"` : ''}>
+            ${item.imagem ? `<span class="image-zoom-hint">Clique para ampliar</span><img src="${item.imagem}" alt="${escapeHtml(item.codigo)}" loading="lazy" decoding="async" />` : `<div class="placeholder">Imagem não cadastrada<br>${escapeHtml(item.codigo)}</div>`}
+          </div>
+          <div class="card-body">
+            <div class="badge-row">
+              <span class="category-chip">${escapeHtml(item.categoria || 'Sem categoria')}</span>
+              ${item.colecao ? `<span class="badge">${escapeHtml(item.colecao)}</span>` : ''}
+              ${item.selo ? `<span class="badge badge-${String(item.selo).toLowerCase()}">${escapeHtml(item.selo)}</span>` : ''}
+            </div>
+            <div class="code">Código da loja: ${escapeHtml(item.codigo || '-')}</div>
+            <div class="price">${currency(item.preco)}</div>
+            <div class="subinfo">Coleção: ${escapeHtml(item.colecao || 'Essenciais')}</div>
+            <div class="product-actions">
+              <button class="copy-code" type="button" onclick="copyCode('${escapeHtml(item.codigo)}')">Copiar código</button>
+              <a class="btn btn-whatsapp small block" href="${whatsappLink(item)}" target="_blank" rel="noopener">
+                <span class="icon">${ICON_WHATSAPP}</span>
+                Pedir no WhatsApp
+              </a>
+            </div>
+          </div>
+        </article>
+      `).join('');
+    }
+
+    function renderAdminList() {
+      const items = [...state.products].sort((a,b) => (a.codigo || '').localeCompare(b.codigo || '', 'pt-BR'));
+      adminList.innerHTML = items.map(item => `
+        <div class="admin-item">
+          <div class="admin-meta">
+            <strong>${escapeHtml(item.codigo)}</strong>
+            <span>${escapeHtml(item.categoria || 'Sem categoria')} · ${currency(item.preco)}</span>
+          </div>
+          <div class="quick-actions">
+            <button class="btn btn-soft" onclick="editProduct('${String(item.codigo).replace(/'/g, "\'")}')">Editar</button>
+            <button class="btn btn-danger" onclick="deleteProduct('${String(item.codigo).replace(/'/g, "\'")}')">Excluir</button>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    function resetForm() {
+      state.selectedCode = null;
+      form.codigo.value = '';
+      form.codigoFornecedor.value = '';
+      form.categoria.value = '';
+      form.preco.value = '';
+      form.colecao.value = '';
+      form.selo.value = '';
+      form.descricao.value = '';
+      form.imagem.value = '';
+      form.codigo.focus();
+    }
+    function editProduct(code) {
+      if (!state.isAdmin) return;
+      const item = state.products.find(p => p.codigo === code);
+      if (!item) return;
+      state.selectedCode = code;
+      form.codigo.value = item.codigo || '';
+      form.codigoFornecedor.value = item.codigoFornecedor || '';
+      form.categoria.value = item.categoria || '';
+      form.preco.value = item.preco ?? '';
+      form.colecao.value = item.colecao || '';
+      form.selo.value = item.selo || '';
+      form.descricao.value = item.descricao || '';
+      form.imagem.value = '';
+      document.getElementById('admin').scrollIntoView({ behavior: 'smooth' });
+      document.querySelector('#admin details').open = true;
+    }
+    function deleteProduct(code) {
+      if (!state.isAdmin) return;
+      const ok = confirm(`Excluir o produto ${code}?`);
+      if (!ok) return;
+      state.products = state.products.filter(p => p.codigo !== code);
+      persistProducts(); fillCategoryFilter(); fillCollectionFilter(); renderCatalog(); renderAdminList(); if (state.selectedCode === code) resetForm();
+    }
+    async function fileToDataUrl(file) { return await new Promise((resolve, reject) => { const reader = new FileReader(); reader.onload = () => resolve(reader.result); reader.onerror = reject; reader.readAsDataURL(file); }); }
+    async function saveProduct() {
+      if (!state.isAdmin) return;
+      const codigo = form.codigo.value.trim().toUpperCase();
+      if (!codigo) return alert('Informe o código da loja.');
+      if (!form.categoria.value.trim()) return alert('Informe a categoria.');
+      if (!form.preco.value) return alert('Informe o valor principal.');
+      const existingIndex = state.products.findIndex(p => p.codigo === (state.selectedCode || codigo));
+      let imagem = existingIndex >= 0 ? state.products[existingIndex].imagem : '';
+      const file = form.imagem.files[0];
+      if (file) imagem = await fileToDataUrl(file);
+      const product = { codigo, codigoFornecedor: form.codigoFornecedor.value.trim(), categoria: form.categoria.value.trim(), preco: Number(form.preco.value), colecao: form.colecao.value.trim() || inferCollection({ categoria: form.categoria.value.trim(), preco: Number(form.preco.value), codigo }), selo: form.selo.value, descricao: form.descricao.value.trim(), imagem };
+      if (existingIndex >= 0) state.products[existingIndex] = product;
+      else { if (state.products.some(p => p.codigo === codigo)) return alert('Já existe um produto com esse código.'); state.products.push(product); }
+      persistProducts(); fillCategoryFilter(); fillCollectionFilter(); renderCatalog(); renderAdminList(); resetForm(); alert('Produto salvo com sucesso.');
+    }
+    function exportJson() { const blob = new Blob([JSON.stringify(state.products, null, 2)], { type: 'application/json' }); const url = URL.createObjectURL(blob); const a = document.createElement('a'); a.href = url; a.download = 'ageu-pratas-catalogo-backup.json'; a.click(); URL.revokeObjectURL(url); }
+    function importJsonFile(file) { const reader = new FileReader(); reader.onload = () => { try { const parsed = JSON.parse(reader.result); if (!Array.isArray(parsed)) throw new Error('Formato inválido'); state.products = parsed; persistProducts(); fillCategoryFilter(); renderCatalog(); renderAdminList(); resetForm(); alert('Backup importado com sucesso.'); } catch (error) { alert('Não foi possível importar este arquivo JSON.'); } }; reader.readAsText(file); }
+    function reloadInitialCatalog() { const ok = confirm('Isso vai restaurar o catálogo original e apagar as alterações salvas neste navegador. Deseja continuar?'); if (!ok) return; localStorage.removeItem(STORAGE_KEY); loadProducts(); fillCategoryFilter(); renderCatalog(); renderAdminList(); resetForm(); }
+
+
+    async function copyCode(code) {
+      try {
+        await navigator.clipboard.writeText(code);
+        alert(`Código ${code} copiado com sucesso.`);
+      } catch (error) {
+        prompt('Copie o código abaixo:', code);
+      }
+    }
+    function openImageModal(code) {
+      const item = state.products.find(p => p.codigo === code);
+      if (!item || !item.imagem) return;
+      modalImage.src = item.imagem;
+      modalImage.alt = item.codigo;
+      modalCode.textContent = item.codigo;
+      modalMeta.textContent = `${item.categoria || 'Sem categoria'} • ${currency(item.preco)} • ${item.colecao || 'Essenciais'}`;
+      modalWhatsApp.href = whatsappLink(item);
+      modalWhatsApp.querySelector('.icon').innerHTML = ICON_WHATSAPP;
+      modalCopyCode.onclick = () => copyCode(item.codigo);
+      imageModal.classList.add('show');
+    }
+    function closeImageModal() {
+      imageModal.classList.remove('show');
+      modalImage.src = '';
+    }
+
+    function openAdminModal() { adminModal.classList.add('show'); adminError.textContent = ''; adminPassword.value = ''; setTimeout(() => adminPassword.focus(), 50); }
+    function closeAdminModal() { adminModal.classList.remove('show'); }
+    function loginAdmin() { if (adminPassword.value === state.config.adminPassword) { setAdminMode(true); closeAdminModal(); document.getElementById('admin').scrollIntoView({behavior:'smooth'}); } else { adminError.textContent = 'Senha incorreta.'; adminPassword.select(); } }
+    function logoutAdmin() { setAdminMode(false); resetForm(); window.scrollTo({ top: 0, behavior: 'smooth' }); }
+
+    function saveTheme() {
+      if (!state.isAdmin) return;
+      state.config = {
+        title: cfg.title.value.trim() || DEFAULT_CONFIG.title,
+        lead: cfg.lead.value.trim() || DEFAULT_CONFIG.lead,
+        impact: cfg.impact.value.trim() || DEFAULT_CONFIG.impact,
+        banner: cfg.banner.value.trim() || DEFAULT_CONFIG.banner,
+        brand: cfg.brand.value,
+        brand2: cfg.brand2.value,
+        bg: cfg.bg.value,
+        accent: cfg.accent.value,
+        logoPosition: cfg.logoPosition.value,
+        logoSize: cfg.logoSize.value,
+        adminPassword: cfg.password.value.trim() || DEFAULT_CONFIG.adminPassword
+      };
+      persistConfig();
+      applyConfig();
+      alert('Personalização salva com sucesso.');
+    }
+    function resetTheme() {
+      const ok = confirm('Restaurar aparência original do catálogo?');
+      if (!ok) return;
+      state.config = { ...DEFAULT_CONFIG };
+      persistConfig();
+      applyConfig();
+    }
+
+    document.getElementById('saveProduct').addEventListener('click', saveProduct);
+    document.getElementById('newProduct').addEventListener('click', resetForm);
+    document.getElementById('exportJson').addEventListener('click', exportJson);
+    document.getElementById('importJson').addEventListener('change', (e) => { const file = e.target.files[0]; if (file) importJsonFile(file); e.target.value = ''; });
+    document.getElementById('clearFilters').addEventListener('click', () => { searchInput.value = ''; categoryFilter.value = ''; collectionFilter.value = ''; sortBy.value = 'codigo'; renderCatalog(); });
+    document.getElementById('reloadData').addEventListener('click', reloadInitialCatalog);
+    document.getElementById('loginAdmin').addEventListener('click', loginAdmin);
+    document.getElementById('closeAdminModal').addEventListener('click', closeAdminModal);
+    document.getElementById('logoutAdmin').addEventListener('click', logoutAdmin);
+    document.getElementById('saveTheme').addEventListener('click', saveTheme);
+    document.getElementById('resetTheme').addEventListener('click', resetTheme);
+    document.getElementById('closeImageModal').addEventListener('click', closeImageModal);
+    adminModal.addEventListener('click', (e) => { if (e.target === adminModal) closeAdminModal(); });
+    imageModal.addEventListener('click', (e) => { if (e.target === imageModal) closeImageModal(); });
+    adminPassword.addEventListener('keydown', (e) => { if (e.key === 'Enter') loginAdmin(); });
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape') { closeAdminModal(); closeImageModal(); } });
+    document.getElementById('logoTrigger').addEventListener('click', () => { tapCount += 1; clearTimeout(tapTimer); tapTimer = setTimeout(() => tapCount = 0, 900); if (tapCount >= 5) { tapCount = 0; openAdminModal(); } });
+    searchInput.addEventListener('input', renderCatalog);
+    categoryFilter.addEventListener('change', renderCatalog);
+    collectionFilter.addEventListener('change', renderCatalog);
+    sortBy.addEventListener('change', renderCatalog);
+
+    window.editProduct = editProduct;
+    window.deleteProduct = deleteProduct;
+    window.copyCode = copyCode;
+    window.openImageModal = openImageModal;
+
+    function init() {
+      loadProducts();
+      loadConfig();
+      applyConfig();
+      setAdminMode(localStorage.getItem(ADMIN_FLAG) === '1');
+      fillCategoryFilter();
+      fillCollectionFilter();
+      renderCatalog();
+      renderAdminList();
+    }
+    init();
+  </script>
+</body>
+</html>
